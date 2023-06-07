@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./notification.js" async></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Notification</title>
+    <style>
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+div{
+    padding: 10px;
+    border: 2px double black;
+    border-radius: 10px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button {
+
+    width: 200px;
+    height: 50px;
+    background-color:transparent;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+button:hover {
+    transform: scale(1.1);
+    transition: 0.5s all;
+    box-shadow: 10px 4px 3px 0px rgba(black,0.5);
+}
+
+button:active{
+    transform: scale(0.9);
+    transition: 0.5s all;
+    box-shadow: 10px 4px 3px 0px rgba(black,0.5);
+}
+    </style>
+  </head>
+  <body>
+    <div style="width: 400px; height: 400px">
+        <span>By Clicking the Send Notification button you can send your self notification</span>
+      <button onclick="notification()">Send Notification</button>
+    </div>
+  </body>
+</html>
